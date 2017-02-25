@@ -219,9 +219,9 @@ footer .dark-gery .copy-right small i {
   bottom: 0;
   background: #fff;
   padding: .8rem;
-  -webkit-box-shadow: 0px -7px 5px -1px rgba(0, 0, 0, 0.07);
-  -moz-box-shadow: 0px -7px 5px -1px rgba(0, 0, 0, 0.07);
-  box-shadow: 0px -7px 5px -1px rgba(0, 0, 0, 0.07)
+  -webkit-box-shadow: 0 -7px 5px -1px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0 -7px 5px -1px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 -7px 5px -1px rgba(0, 0, 0, 0.07)
 }
 
 .footer-aap-des .logo-bottom {
@@ -319,9 +319,9 @@ footer .dark-gery .copy-right small i {
   width: 100%;
   box-sizing: border-box;
   position: relative;
-  -webkit-box-shadow: 0px 2px 10px #b3b3b3;
-  -moz-box-shadow: 0px 2px 10px #b3b3b3;
-  box-shadow: 0px 2px 10px #b3b3b3;
+  -webkit-box-shadow: 0 2px 10px #b3b3b3;
+  -moz-box-shadow: 0 2px 10px #b3b3b3;
+  box-shadow: 0 2px 10px #b3b3b3;
   background: #fff
 }
 
@@ -339,7 +339,7 @@ footer .dark-gery .copy-right small i {
 .home-search .inr-search input, .home-search .search-button input {
   width: 79%;
   height: 48px;
-  padding: 0px 0 0 43px;
+  padding: 0 0 0 43px;
   border: none;
   vertical-align: top;
   box-sizing: border-box;
@@ -395,7 +395,6 @@ footer .dark-gery .copy-right small i {
   box-shadow: inset -12px 28px 11px -28px rgba(0, 0, 0, 0.76);
   background: #f2f2f2;
   padding: 15px 15px 10px 15px;
-  text: align-center
 }
 
 .sell-device img {
@@ -405,7 +404,6 @@ footer .dark-gery .copy-right small i {
 .item-section {
   background: #fff;
   border: 1px solid #e7e7e8;
-  border-width: 0 1px 1px 0
 }
 
 .item-section h2 {
@@ -420,12 +418,10 @@ footer .dark-gery .copy-right small i {
 .item-section .first-row {
   box-sizing: border-box;
   border: 1px solid #e7e7e8;
-  border-width: 1px 0 0 0px
 }
 
 .item-section .first-row span {
   border: 1px solid #e7e7e8;
-  border-width: 0px 1px 1px 0px;
   padding-top: 10px;
   width: 25%;
   box-sizing: border-box;
@@ -531,7 +527,6 @@ footer .dark-gery .copy-right small i {
 
 .sold-box .item-description .price:before {
   content: '\f156';
-  font-family: "FontAwesome";
   font-size: 18px;
   padding-right: 5px
 }
@@ -561,8 +556,7 @@ footer .dark-gery .copy-right small i {
 
 .sell-used ul li a:before {
   content: '';
-  content: '';
-  /*background: url(../imgs/sprite-icons-h.png) no-repeat -38px 0px;*/
+  /*background: url(../imgs/sprite-icons-h.png) no-repeat -38px 0;*/
   width: 28px;
   height: 23px;
   float: left;
@@ -605,7 +599,6 @@ footer .dark-gery .copy-right small i {
 }
 
 .category-box ul li .category-bg {
-  width: 90px;
   width: 90px;
   margin-right: 1rem;
   float: left
@@ -652,8 +645,6 @@ footer .dark-gery .copy-right small i {
   width: 47.5%;
   border: none;
   border-radius: 10px;
-  height: 117px;
-  border: 1px solid #d3d2d2;
   box-sizing: border-box;
   background: #fff
 }
@@ -714,7 +705,7 @@ footer .dark-gery .copy-right small i {
 
 .promotion-section .promo-sub-box {
   width: 80px;
-  padding: 0rem .5rem 1rem .5rem;
+  padding:  0 .5rem 1rem .5rem;
   box-sizing: border-box
 }
 
@@ -757,13 +748,13 @@ footer .dark-gery .copy-right small i {
 }
 
 .promotion-section .promo-sub-text dl dd {
-  margin: 0rem .4rem 0rem 0rem;
+  margin:  0 .4rem  0  0;
   font-size: 12px
 }
 
 .promotion-section .promo-sub-text dl dd i {
   font-size: 10px;
-  margin: 0rem .4rem 0rem 0rem;
+  margin:  0 .4rem  0  0;
   line-height: 15px;
   background: none
 }
@@ -786,7 +777,6 @@ footer .dark-gery .copy-right small i {
 .promotion-section .price-details {
   margin-top: 2rem;
   border: 1px solid #e3e3e3;
-  border-width: 1px 0 1px 0
 }
 
 .promotion-section .price-details span {
@@ -919,21 +909,21 @@ footer .dark-gery .copy-right small i {
 
 @keyframes slideInUp {
   0% {
-    transform: translate3d(0px, 100%, 0px);
+    transform: translate3d(0px, 100%, 0);
     visibility: visible
   }
   100% {
-    transform: translate3d(0px, 0px, 0px)
+    transform: translate3d(0px, 0, 0)
   }
 }
 
 @keyframes slideInUp {
   0% {
-    transform: translate3d(0px, 100%, 0px);
+    transform: translate3d(0px, 100%, 0);
     visibility: visible
   }
   100% {
-    transform: translate3d(0px, 0px, 0px)
+    transform: translate3d(0px, 0, 0)
   }
 }
 
@@ -943,21 +933,21 @@ footer .dark-gery .copy-right small i {
 
 @keyframes slideInDown {
   0% {
-    transform: translate3d(0px, -100%, 0px);
+    transform: translate3d(0px, -100%, 0);
     visibility: visible
   }
   100% {
-    transform: translate3d(0px, 0px, 0px)
+    transform: translate3d(0px, 0, 0)
   }
 }
 
 @keyframes slideInDown {
   0% {
-    transform: translate3d(0px, -100%, 0px);
+    transform: translate3d(0px, -100%, 0);
     visibility: visible
   }
   100% {
-    transform: translate3d(0px, 0px, 0px)
+    transform: translate3d(0px, 0, 0)
   }
 }
 
@@ -1088,7 +1078,6 @@ footer .dark-gery .copy-right small i {
 #menu-button, i.icon:before, i.icon:after {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
   transition: all 0.3s
 }
 
@@ -1238,7 +1227,6 @@ nav ul li a {
   transition: all 0.25s linear;
   -webkit-transition: all 0.25s linear;
   -moz-transition: all 0.25s linear;
-  -ms-transition: all 0.25s linear
 }
 
 nav ul li a:hover {
@@ -1272,7 +1260,6 @@ div.menu-open {
 }
 
 div.menu-open:before, div.menu-open.more:before {
-  font-family: "FontAwesome";
   position: absolute;
   left: 0;
   top: 0;
@@ -1346,7 +1333,7 @@ nav {
 }
 
 .address-box .search-button {
-  background-position: -70px 0px;
+  background-position: -70px 0;
   width: 30px;
   height: 20px;
   float: left
@@ -1367,7 +1354,6 @@ nav {
   line-height: 18px;
   color: #fff;
   font-size: .7rem;
-  line-height: 22px
 }
 
 .search-button {
@@ -1386,7 +1372,6 @@ nav {
 }
 
 #search-box .inr-search i, #search-box .search-button i {
-  background: none;
   background: none;
   color: #666;
   font-size: 19px;
@@ -1520,7 +1505,6 @@ nav {
   color: #000;
   padding: .8rem;
   height: 100%;
-  height: 140px
 }
 
 .item-container ul li a p, .item-cn-condition ul li a p {
@@ -1615,7 +1599,6 @@ nav {
 
 .condition-box dl dd {
   font-size: 13px;
-  margin: 0;
   padding: 0;
   list-style-type: disc;
   display: list-item;
@@ -1702,7 +1685,6 @@ nav {
   border: 1px solid #333;
   width: 31px;
   height: 31px;
-  border-width: 0px 0px 1px 0px;
   background: #fff;
   position: absolute
 }
@@ -1720,7 +1702,7 @@ nav {
   background: #f2f2f2 none repeat scroll 0 0;
   border-color: #ccc;
   border-image: none;
-  border-radius: 0 22px 22px 0px;
+  border-radius: 0 22px 22px 0;
   border-style: solid;
   border-width: 1px 1px 1px 0;
   content: "";
@@ -1780,7 +1762,6 @@ nav {
   padding-top: 10px;
   overflow: hidden;
   -moz-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s
@@ -1821,7 +1802,6 @@ nav {
 
 .selling-search input {
   border: 2px solid #19a89d;
-  border-width: 0 0 1px 0;
   margin-right: 10px
 }
 
@@ -1896,8 +1876,7 @@ button, .updatebutton {
 
 .inputboxcoupon i.alert-box {
   position: absolute;
-  position: absolute;
-  right: 0px;
+  right: 0;
   top: -25px;
   color: red;
   font-size: 16px
@@ -1936,7 +1915,7 @@ button, .updatebutton {
 }
 
 .conditionbg-box {
-  line-height: 0px
+  line-height: 0
 }
 
 .user-selection-check {
@@ -2160,7 +2139,6 @@ button, .updatebutton {
 .time-section .time-se-box, .time-section .time-se-boxgr, .time-section .time-se-boxgr-top {
   border: 1px solid #19a89d;
   padding: .7rem 1.5rem .7rem 1.5rem;
-  border-width: 1px 0 1px 0
 }
 
 .time-section .time-se-box span, .time-section .time-se-boxgr span, .time-section .time-se-boxgr-top span {
@@ -2189,7 +2167,6 @@ button, .updatebutton {
 .myAddressess-bx dl dt {
   border: 1px solid #c5c5c5;
   padding: .7rem .8rem .7rem .8rem;
-  border-width: 1px 0 1px 0;
   background: #f1f1f1
 }
 
@@ -2310,7 +2287,6 @@ button, .updatebutton {
   -webkit-font-smoothing: antialiased;
   border: 0 !important;
   color: #fff;
-  font-size: 12px
 }
 
 .tick-selected:before {
@@ -2356,7 +2332,6 @@ button, .updatebutton {
   display: block;
   width: 100%;
   border: none;
-  font-size: 14px
 }
 
 .address-form .inputMaterial:focus {
@@ -2718,7 +2693,7 @@ button, .updatebutton {
   transform: rotate(90deg);
   border-color: #ccc;
   border-image: none;
-  border-radius: 0 22px 22px 0px;
+  border-radius: 0 22px 22px 0;
   border-style: solid;
   border-width: 1px 1px 1px 0;
   float: left;
@@ -2735,7 +2710,7 @@ button, .updatebutton {
   transform: rotate(90deg);
   border-color: #ccc;
   border-image: none;
-  border-radius: 0 22px 22px 0px;
+  border-radius: 0 22px 22px 0;
   border-style: solid;
   border-width: 1px 1px 1px 0;
   float: left;
@@ -2752,7 +2727,7 @@ button, .updatebutton {
   transform: rotate(90deg);
   border-color: #ccc;
   border-image: none;
-  border-radius: 0 22px 22px 0px;
+  border-radius: 0 22px 22px 0;
   border-style: solid;
   border-width: 1px 1px 1px 0;
   float: left;
@@ -2762,9 +2737,6 @@ button, .updatebutton {
   top: -8px;
   width: 18px;
   bottom: -10px;
-  top: auto;
-  border-width: 1px 1px 1px 0;
-  transform: rotate(270deg)
 }
 
 .paymentcod ul li dl dd.paymentdiscript {
@@ -2792,7 +2764,7 @@ button, .updatebutton {
   font-size: 15px;
   width: 70%;
   text-align: left;
-  padding: 0px 0 0 8px
+  padding: 0 0 0 8px
 }
 
 .paymentcod ul li dl .count-num .numadd-b {
@@ -2857,12 +2829,12 @@ button, .updatebutton {
 .order-description .order-container .cashify-arrow i {
   width: 0;
   height: 0;
-  border-top: 0px solid transparent;
+  border-top: 0 solid transparent;
   border-bottom: 10px solid transparent;
   border-right: 10px solid rgba(0, 0, 0, 0.6);
   position: absolute;
   bottom: -10px;
-  left: 0px
+  left: 0
 }
 
 .order-description .order-container h3, .order-description .order-container .gadget-box h4, .gadget-box .order-description .order-container h4, .order-description .order-container .gadget-box h5, .gadget-box .order-description .order-container h5 {
@@ -2876,7 +2848,6 @@ button, .updatebutton {
   color: #000;
   font-size: 25px;
   padding: 8px 0 8px 10px;
-  color: #19a89d
 }
 
 .order-description .order-container .price-text .order-arrow {
@@ -3161,10 +3132,7 @@ button, .updatebutton {
   background: #fff;
   width: 100%;
   position: absolute;
-  width: 90%;
-  overflow: auto;
   margin: auto;
-  position: absolute;
   left: 0;
   right: 0
 }
@@ -3284,7 +3252,7 @@ section .title2 {
 }
 
 .patnar-list ul li {
-  box-shadow: 0px 1px 2px #666;
+  box-shadow: 0 1px 2px #666;
   min-height: 48px;
   width: 45%;
   border: 1px solid #DDDDDD;
@@ -3302,10 +3270,10 @@ section .title2 {
 }
 
 .clr {
-  width: 0px;
-  height: 0px;
-  margin: 0px;
-  padding: 0px;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
   clear: both
 }
 
@@ -3327,7 +3295,6 @@ section.contact .geryBg .form-box ul {
 }
 
 section.contact .geryBg .form-box ul li input[type="text"] {
-  background: none;
   background: none;
   color: #666;
   border-bottom: 1px solid #c0c0c0
@@ -3431,7 +3398,7 @@ section .contact-list ul {
 
 section .contact-list ul li {
   border-bottom: 1px solid #e1e1e1;
-  padding: 0px 25px 10px 25px
+  padding: 0 25px 10px 25px
 }
 
 section .contact-list ul li:last-child {
@@ -3502,7 +3469,7 @@ button[type="submit"], .submit {
 }
 
 .legal div.panel {
-  padding: 0px 15px;
+  padding: 0 15px;
   background-color: #fff;
   max-height: 0;
   overflow: hidden;
@@ -3764,7 +3731,7 @@ button[type="submit"], .submit {
 }
 
 .verification .cashify-round-xlarge {
-  border-radius: 6px 0px 0px 6px !important
+  border-radius: 6px 0 0 6px !important
 }
 
 .verification .cashify-progressbar {
@@ -4433,4 +4400,13 @@ img.full-width {
   padding: 15px
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?y9jhpj');
+  src:  url('../fonts/icomoon.eot?y9jhpj#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?y9jhpj') format('truetype'),
+  url('../fonts/icomoon.woff?y9jhpj') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 /*# sourceMappingURL=style.css.map */
