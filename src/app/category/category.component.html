@@ -1,0 +1,8 @@
+<div class="item-section" *ngIf="all_categories">
+  <h2  >{{all_categories.ct}}</h2>
+  <div class="first-row">
+			<span *ngFor="let category of all_categories.dt" (click)="categorySelected(category)"><a ripple class="tx--white">
+        <aside class="boximgwh"><i class="item-se01"><img src="{{all_categories.cdn}}{{category.iu}}{{category.in}}" alt="{{category.pln}}"></i></aside><small>{{category.pln}}</small></a>
+			</span>
+  </div>
+</div>
