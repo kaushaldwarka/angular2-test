@@ -20,6 +20,7 @@ import {SoldDevicesService} from "./sold-devices/sold-devices.service";
 import { ProductsComponent } from './products/products.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { InnerFooterComponent } from './inner-footer/inner-footer.component';
+import { LocalStorageModule } from 'angular-2-local-storage';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,11 @@ import { InnerFooterComponent } from './inner-footer/inner-footer.component';
     BrowserModule,
     FormsModule,
     HttpModule,
+    LocalStorageModule.withConfig({
+      prefix: 'my-app',
+      storageType: 'localStorage'
+      // storageType: 'sessionStorage'
+    }),
     RouterModule.forRoot([
       {
         path: 'home',

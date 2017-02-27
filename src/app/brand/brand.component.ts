@@ -26,6 +26,9 @@ export class BrandComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    localStorage.getItem('product_line_id');
+    var product_line_name = localStorage.getItem('product_line_name');
+    console.log(product_line_name);
 
     this.route.params.subscribe(
       params => {this.plid = +params['plid']}
