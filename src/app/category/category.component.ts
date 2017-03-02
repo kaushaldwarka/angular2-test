@@ -24,7 +24,7 @@ export class CategoryComponent implements OnInit {
   categorySelected(category: Category) {
     localStorage.setItem('product_line_id', category.pli.toString());
     localStorage.setItem('product_line_name',category.pln);
-    // localStorage.getItem('key','value');
+    // localStorage.getItem('key');
     this.router.navigate(['brands', category.pli]);
   }
 

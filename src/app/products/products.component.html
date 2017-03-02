@@ -2,25 +2,10 @@
   <h2>Select Your Device</h2>
   <div class="category-box">
     <ul>
-      <li>
-        <a  href="product-detail" ripple class="tx--white"><span class="category-bg"><img height="70px" src="https://s3.cashify.in/brand/5791fc3e664f9-apple_icon.jpg" src="https://s3.cashify.in/brand/5791fc3e664f9-apple_icon.jpg" alt=""></span>
-          <span class="category-heading">Apple iPhone</span>
-        </a>
-      </li>
-      <li>
-        <a href="#" ripple class="tx--white"><span class="category-bg"><img height="70px" data-ng-src="https://s3.cashify.in/brand/5507c8f23cf95-5429217fdeb61-samsung.png" src="https://s3.cashify.in/brand/5507c8f23cf95-5429217fdeb61-samsung.png" alt=""></span>
-          <span class="category-heading">Apple iPhone</span>
-        </a>
-      </li>
-      <li>
-        <a href="#" ripple class="tx--white"><span class="category-bg"><img height="70px" data-ng-src="https://s3.cashify.in/brand/5507c9358740f-54e7fdc7e3cf2-Nokia-Logo.jpg" src="https://s3.cashify.in/brand/5507c9358740f-54e7fdc7e3cf2-Nokia-Logo.jpg" alt=""></span>
-          <span class="category-heading">Apple iPhone</span>
-        </a>
-      </li>
-      <li>
-        <a href="#" ripple class="tx--white"><span class="category-bg"><img height="70px" data-ng-src="https://s3.cashify.in/brand/5507c981b5614-549944c4bd60b-Micromax-Mobiles-Logo.jpg" src="https://s3.cashify.in/brand/5507c981b5614-549944c4bd60b-Micromax-Mobiles-Logo.jpg" alt=""></span>
-          <span class="category-heading">Apple iPhone</span>
-        </a>
+      <li *ngFor="let product of products">
+       <span class="category-bg" (click)="selected(product)">
+        <img height="90" src="http://s3t.reglobe.in{{product.piu+product.pin}}" alt="{{product.pn}}">
+        </span>
       </li>
 
     </ul>

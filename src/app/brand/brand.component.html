@@ -1,15 +1,12 @@
 <section class="select-brand">
-  <h2>Which brand is your <strong>Mobile</strong>?</h2>
-  <div class="category-box category-brand">
-    <ul>
-      <li *ngFor="let brand of brands">
-        <a href="products" ripple class="tx--white">
-                     <span class="category-bg">
+    <h2>Which brand is your <strong>Mobile</strong>?</h2>
+    <div class="category-box category-brand">
+        <ul>
+            <li *ngFor="let brand of brands" (click)="selected(brand)">
+                     <span class="category-bg" >
                        <img height="90" src="http://s3t.reglobe.in{{brand.iu+brand.in}}" alt="{{brand.bn}}">
                      </span>
-
-        </a>
-      </li>
-    </ul>
-  </div>
+            </li>
+        </ul>
+    </div>
 </section>

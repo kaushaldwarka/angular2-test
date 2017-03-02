@@ -57,11 +57,11 @@ import { LocalStorageModule } from 'angular-2-local-storage';
         component: BrandComponent
       },
       {
-        path: 'products',
+        path: 'products/:bid',
         component: ProductsComponent
       },
       {
-        path: 'product-detail',
+        path: 'product-detail/:pid',
         component: ProductDetailComponent
       },
       {
