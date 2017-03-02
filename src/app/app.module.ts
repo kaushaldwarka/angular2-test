@@ -16,6 +16,8 @@ import { SoldDevicesComponent } from './sold-devices/sold-devices.component';
 import {RouterModule} from "@angular/router";
 import {CategoryService} from "./category/category.service";
 import {BrandService} from "./brand/brand.service";
+import {ProductsService} from "./products/products.service";
+
 import {SoldDevicesService} from "./sold-devices/sold-devices.service";
 import { ProductsComponent } from './products/products.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
@@ -57,7 +59,7 @@ import { LocalStorageModule } from 'angular-2-local-storage';
         component: BrandComponent
       },
       {
-        path: 'products/:bid',
+        path: 'products/:plid/:bid',
         component: ProductsComponent
       },
       {
@@ -74,7 +76,8 @@ import { LocalStorageModule } from 'angular-2-local-storage';
   providers: [
     CategoryService,
     SoldDevicesService,
-    BrandService
+    BrandService,
+    ProductsService
   ],
   bootstrap: [MyRouterComponent]
 })

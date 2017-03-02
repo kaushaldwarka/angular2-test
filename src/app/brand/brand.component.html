@@ -2,7 +2,7 @@
     <h2>Which brand is your <strong>Mobile</strong>?</h2>
     <div class="category-box category-brand">
         <ul>
-            <li *ngFor="let brand of brands" (click)="selected(brand)">
+            <li *ngFor="let brand of brands" (click)="brandSelected(brand)">
                      <span class="category-bg" >
                        <img height="90" src="http://s3t.reglobe.in{{brand.iu+brand.in}}" alt="{{brand.bn}}">
                      </span>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute, Params} from "@angular/router";
+import {ActivatedRoute, Params, Router} from "@angular/router";
 import 'rxjs/add/operator/switchMap';
 import {Product} from "./product";
 import {ProductsService} from "./products.service";
@@ -12,36 +12,35 @@ import {ProductsService} from "./products.service";
 export class ProductsComponent implements OnInit {
 
   plid: any;
-  bid:any;
+  bid: any;
   products: Product[];
   constructor(private productsService: ProductsService,
-              private route: ActivatedRoute
+              private route: ActivatedRoute,
+              private router: Router
   ) {  }
 
 
-  /*getProducts(plid :string,bid:string): void {
+  getProducts(plid :string,bid:string): void {
     this.productsService.getProducts(plid,bid).subscribe(response=>{
-      console.log(response);
       this.products = response;
     });
-  }*/
+  }
 
-  /*selected(product: Product) {
+  productSelected(product: Product) {
     localStorage.setItem('product_id', product.pi.toString());
     localStorage.setItem('product_name',product.pn);
     // localStorage.getItem('key','value');
-    // this.router.navigate(['products', this.plid,brand.bi]);
-  }*/
+     this.router.navigate(['product-detail', product.pi]);
+  }
 
   ngOnInit(): void {
     localStorage.getItem('product_line_id');
-    this.plid = localStorage.getItem('product_line_id');
+    //this.plid = localStorage.getItem('product_line_id');
 
     this.route.params.subscribe(
-        params => {this.bid = +params['bid']}
+        params => {this.plid = +params['plid'],this.bid = +params['bid']}
     );
-    console.log(this.plid);
-    // this.getProducts(this.plid,this.bid);
+     this.getProducts(this.plid,this.bid);
 
   }
 
