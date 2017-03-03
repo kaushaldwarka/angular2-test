@@ -1,9 +1,10 @@
+<app-header></app-header>
 <section class="select-brand">
   <h2>Select Your Device</h2>
   <div class="category-box">
     <ul>
       <li *ngFor="let product of products">
-       <span class="category-bg" (click)="selected(product)">
+       <span class="category-bg" (click)="productSelected(product)">
         <img height="90" src="http://s3t.reglobe.in{{product.piu+product.pin}}" alt="{{product.pn}}">
         </span>
       </li>

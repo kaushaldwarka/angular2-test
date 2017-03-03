@@ -1,27 +1,28 @@
-<section class="promotion-section addforprice">
+<app-header></app-header>
+<section class="promotion-section addforprice" *ngIf="product">
   <div class="promo-heading">
     <span class="promo-sm-bg"><i class="prom-bg-ht"><img src="https://s3.cashify.in/brand/55ffb42c154f9-ht_microsoft_cc_120823_wg.jpg"  alt=""></i></span>
-    <span class="promo-text">Microsoft Lumia 550</span></div>
+    <span class="promo-text">{{product.pn}}</span></div>
   <div class="promo-sub-box">
-    <span class="promo-sub-bg"><i><img  src="https://s3.cashify.in/details/56b47154c4013-microsoft-lumia-550-lumia-550-400x400-imaeeqmpdnywb9fz.jpeg" alt="Microsoft Lumia 550"></i></span>
+    <span class="promo-sub-bg"><i><img  src="{{product.cdn+product.piu+product.pin}}" alt="{{product.pn}}"></i></span>
     <span class="promo-sub-text">
 
                 <dl>
                     <dt>Released on <span>Dec 2015</span></dt>
-                    <dd><i class="fa fa-check" aria-hidden="true"></i>1 GB RAM</dd>
-                    <dd><i class="fa fa-check" aria-hidden="true"></i>4.7" Screen</dd>
+                    <dd><i class="fa fa-check" aria-hidden="true"></i>{{product.pd}}</dd>
+                    <!--<dd><i class="fa fa-check" aria-hidden="true"></i>4.7" Screen</dd>
                     <dd><i class="fa fa-check" aria-hidden="true"></i>8 GB</dd>
                     <dd><i class="fa fa-check" aria-hidden="true"></i>5 MP</dd>
-                    <dd><i class="fa fa-check" aria-hidden="true"></i>Quad-core 1.1.0 GHz Cortex-A7</dd>
-                    <dd><span><i class="fa fa-check-circle" aria-hidden="true"></i>200+</span>Sold on Cashify</dd>
+                    <dd><i class="fa fa-check" aria-hidden="true"></i>Quad-core 1.1.0 GHz Cortex-A7</dd>-->
+                    <dd><span><i class="fa fa-check-circle" aria-hidden="true"></i>{{product.ds}}</span>Sold on Cashify</dd>
                     </dl>
 
          </span>
   </div>
 
   <div class="price-details flwidth ">
-    <span class="current-price fl"><small>Current MRP</small><p>Rs.19,990</p></span>
-    <span class="get-price fl"><small>Get UP TO</small><p>Rs.19,990</p></span>
+    <span class="current-price fl"><small>Current MRP</small><p>Rs.{{product.put}}</p></span>
+    <span class="get-price fl"><small>Get UP TO</small><p>Rs.{{product.put}}</p></span>
   </div>
 
 </section>
