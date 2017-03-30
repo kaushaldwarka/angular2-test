@@ -24,6 +24,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { InnerFooterComponent } from './inner-footer/inner-footer.component';
 import { LocalStorageModule } from 'angular-2-local-storage';
 import {ProductDetailService} from "./product-detail/product-detail.service";
+import {SearchService} from "./search/search.service";
 
 
 @NgModule({
@@ -76,11 +77,12 @@ import {ProductDetailService} from "./product-detail/product-detail.service";
     ]),
   ],
   providers: [
-    CategoryService,
-    SoldDevicesService,
-    BrandService,
-    ProductsService,
-    ProductDetailService
+      CategoryService,
+      SoldDevicesService,
+      BrandService,
+      ProductsService,
+      ProductDetailService,
+      SearchService
   ],
   bootstrap: [MyRouterComponent]
 })

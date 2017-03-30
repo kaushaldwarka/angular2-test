@@ -1,6 +1,15 @@
 <div class="home-search animated" id="home-sticky">
   <div class="inr-search">
-    <input type="text" name="fname" placeholder="Search your device to sell "><i></i>
-    <div class="hm-search"><a  href="javascript:;" data-toggle="modal" data-target="#search-modal" ><span>Search</span></a></div>
+    <input type="text" [(ngModel)]="query" placeholder="Search your device to sell" ><i></i>
+    <div class="hm-search"><a  href="javascript:;" data-toggle="modal" data-target="#search-modal" (click)="searchProduct()"><span>Search</span></a></div>
+    <div *ngIf="products">
+      <ul>
+        <li *ngFor="let product of products">
+         <span class="category-bg" (click)="productSelected(product)">{{product.pn}}
+          <!--<img height="90" src="http://s3t.reglobe.in{{product.piu+product.pin}}" alt="{{product.pn}}">-->
+          </span>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
