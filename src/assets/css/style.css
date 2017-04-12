@@ -4400,7 +4400,7 @@ img.full-width {
   padding: 15px
 }
 
-@font-face {
+/*@font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?y9jhpj');
   src:  url('../fonts/icomoon.eot?y9jhpj#iefix') format('embedded-opentype'),
@@ -4408,5 +4408,5 @@ img.full-width {
   url('../fonts/icomoon.woff?y9jhpj') format('woff');
   font-weight: normal;
   font-style: normal;
-}
+}*/
 /*# sourceMappingURL=style.css.map */
