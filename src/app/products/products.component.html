@@ -5,7 +5,7 @@
     <ul>
       <li *ngFor="let product of products">
        <span class="category-bg" (click)="productSelected(product)">
-        <img height="90" src="http://s3t.reglobe.in{{product.piu+product.pin}}" alt="{{product.pn}}">
+        <img height="90" src="http://s3t.reglobe.in{{product.piu}}thumb/hdpi/{{product.pin}}" alt="{{product.pn}}">
         </span>
       </li>
 

@@ -5,7 +5,7 @@
         <ul>
             <li *ngFor="let brand of brands" (click)="brandSelected(brand)">
                      <span class="category-bg" >
-                       <img height="90" src="http://s3t.reglobe.in{{brand.iu+brand.in}}" alt="{{brand.bn}}">
+                       <img height="90" src="http://s3t.reglobe.in{{brand.iu}}thumb/hdpi/{{brand.in}}" alt="{{brand.bn}}">
                      </span>
             </li>
         </ul>
