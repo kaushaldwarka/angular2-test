@@ -33,6 +33,11 @@ export class ProductsComponent implements OnInit {
      this.router.navigate(['product-detail', product.pi]);
   }
 
+  getImageUrl(product: Product): string{
+    var imageUrl = (product.pin == undefined || product.pin == '' ) ? 'http://s3.cashify.in/cashify/ng/not-available.png' : 'http://s3t.reglobe.in'+product.piu+'thumb/hdpi/'+product.pin;
+    return imageUrl;
+  }
+
   ngOnInit(): void {
     localStorage.getItem('product_line_id');
     //this.plid = localStorage.getItem('product_line_id');

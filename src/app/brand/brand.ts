@@ -4,5 +4,5 @@ export class Brand {
   iu: string;
   if: number;
   hm: number;
-  in: number;
+  in: string;
 }

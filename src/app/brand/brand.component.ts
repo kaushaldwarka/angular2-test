@@ -32,6 +32,11 @@ export class BrandComponent implements OnInit {
     this.router.navigate(['products',this.plid, brand.bi]);
   }
 
+  getImageUrl(brand: Brand): string{
+    var imageUrl = (brand.in == undefined || brand.in == '') ? 'http://s3.cashify.in/cashify/ng/not-available.png' : 'http://s3t.reglobe.in'+brand.iu+'thumb/hdpi/'+brand.in;
+    return imageUrl;
+  }
+
   ngOnInit(): void {
     localStorage.getItem('product_line_id');
    // var product_line_name = localStorage.getItem('product_line_name');

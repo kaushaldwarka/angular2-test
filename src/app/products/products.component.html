@@ -1,15 +1,17 @@
 <app-header></app-header>
 <section class="select-brand">
   <h2>Select Your Device</h2>
-  <div class="category-box">
+  <div class="category-box category-brand">
     <ul>
       <li *ngFor="let product of products">
        <span class="category-bg" (click)="productSelected(product)">
-        <img height="90" src="http://s3t.reglobe.in{{product.piu}}thumb/hdpi/{{product.pin}}" alt="{{product.pn}}">
+        <img height="45" [src]="getImageUrl(product)" alt="{{product.pn}}">
+         <p>{{product.pn}}</p>
         </span>
       </li>
 
     </ul>
 
   </div>
+
 </section>
