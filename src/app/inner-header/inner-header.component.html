@@ -1,6 +1,6 @@
 <header>
   <div class="menu-icon">
-    <a href="javascript:ShowContent('main-menu')" id="menu-button"><i class="icon"></i></a>
+    <i class="fa fa-arrow-left" aria-hidden="true" (click)="goBack()"></i>
   </div>
   <div class="logo2">
     <a [routerLink]="['/home']"><img src="http://s3.cashify.in/cashify/ng/logo-white.png" alt="Cashify" height="25"></a>
@@ -12,6 +12,4 @@
     </a>
   </div>
   </div>
-  <app-menu></app-menu>
-
 </header>

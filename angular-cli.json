@@ -18,8 +18,8 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "styles": [
-        "assets/css/style.css",
-        "styles.css"
+        "assets/css/style.css"
+        //"styles.css"
       ],
       "scripts": [
         "assets/custom-js/search.js"

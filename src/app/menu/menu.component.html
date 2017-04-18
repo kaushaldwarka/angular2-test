@@ -11,96 +11,16 @@
       <div class="fr city-desc"> Gurgaon <i class="fa fa-angle-down" aria-hidden="true"></i> </div>
     </div>
     <ul>
-      <li class="user"><a href="#"><i><img src="/src/assets/img/Amit.jpg" class="imgwid"></i> Neha Sharma</a>
-        <ul class="sub-menu">
-          <li><a href="#">Level 1</a></li>
-          <li><a href="#">Level 1</a></li>
-          <li><a href="#">Level 1</a></li>
-        </ul>
-      </li>
-      <li><a href="about.html">About Us</a>
-        <ul class="sub-menu">
-          <li><a href="#">Level 1</a></li>
-          <li><a href="#">Level 1</a></li>
-          <li><a href="#">Level 1</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Careers</a></li>
-      <li><a href="#">Contact Us</a></li>
-      <li><a href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
-    </ul>
+      <li class="user"><a href="#"><i><img src="http://s3.cashify.in/cashify/ng/user.jpg" class="imgwid"></i> Neha Sharma</a>
 
-  </div>
-
-</nav>
-<nav>
-  <div class="overlay-screen" id="overlay"><a href="javascript:HideContent('main-menu')"></a></div>
-  <div id="main-menu" style="display: none;" class="animated-07" onClick="javascript:HideContent('main-menu')">
-
-    <div class="side-bar">
-      <div class="close fl">
-        <a href="javascript:HideContent('main-menu')">
-          <i class="fa fa-arrow-left" aria-hidden="true"></i>
-        </a>
-      </div>
-      <div class="fr city-desc"> Gurgaon <i class="fa fa-angle-down" aria-hidden="true"></i> </div>
-    </div>
-    <ul>
-      <li class="user"><a href="#"><i><img src="/src/assets/img/Amit.jpg" class="imgwid"></i> Neha Sharma</a>
-        <ul class="sub-menu">
-          <li><a href="#">Level 1</a></li>
-          <li><a href="#">Level 1</a></li>
-          <li><a href="#">Level 1</a></li>
-        </ul>
       </li>
-      <li><a href="about.html">About Us</a>
-        <ul class="sub-menu">
-          <li><a href="#">Level 1</a></li>
-          <li><a href="#">Level 1</a></li>
-          <li><a href="#">Level 1</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Careers</a></li>
-      <li><a href="#">Contact Us</a></li>
-      <li><a href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
-    </ul>
+      <li><a [routerLink]="['/about-us']">About Us</a>
 
-  </div>
-
-</nav>
-<nav>
-  <div class="overlay-screen" id="overlay"><a href="javascript:HideContent('main-menu')"></a></div>
-  <div id="main-menu" style="display: none;" class="animated-07" onClick="javascript:HideContent('main-menu')">
-
-    <div class="side-bar">
-      <div class="close fl">
-        <a href="javascript:HideContent('main-menu')">
-          <i class="fa fa-arrow-left" aria-hidden="true"></i>
-        </a>
-      </div>
-      <div class="fr city-desc"> Gurgaon <i class="fa fa-angle-down" aria-hidden="true"></i> </div>
-    </div>
-    <ul>
-      <li class="user"><a href="#"><i><img src="/src/assets/img/Amit.jpg" class="imgwid"></i> Neha Sharma</a>
-        <ul class="sub-menu">
-          <li><a href="#">Level 1</a></li>
-          <li><a href="#">Level 1</a></li>
-          <li><a href="#">Level 1</a></li>
-        </ul>
       </li>
-      <li><a href="about.html">About Us</a>
-        <ul class="sub-menu">
-          <li><a href="#">Level 1</a></li>
-          <li><a href="#">Level 1</a></li>
-          <li><a href="#">Level 1</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Careers</a></li>
-      <li><a href="#">Contact Us</a></li>
-      <li><a href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
+      <li><a [routerLink]="['/blog']">Blog</a></li>
+      <li><a [routerLink]="['/careers']">Careers</a></li>
+      <li><a [routerLink]="['/contact-us']">Contact Us</a></li>
+      <li><a [routerLink]="['/login']">Login</a></li>
     </ul>
 
   </div>
