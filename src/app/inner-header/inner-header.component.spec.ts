@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import {InnerHeaderComponent} from "./inner-header.component";
+import { InnerHeaderComponent } from './inner-header.component';
 
 describe('InnerHeaderComponent', () => {
   let component: InnerHeaderComponent;

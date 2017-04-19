@@ -25,7 +25,8 @@ import { InnerFooterComponent } from './inner-footer/inner-footer.component';
 import { LocalStorageModule } from 'angular-2-local-storage';
 import {ProductDetailService} from "./product-detail/product-detail.service";
 import {SearchService} from "./search/search.service";
-import {InnerHeaderComponent} from "./inner-header/inner-header.component";
+import { InnerHeaderComponent } from './inner-header/inner-header.component';
+
 
 
 @NgModule({
@@ -37,13 +38,13 @@ import {InnerHeaderComponent} from "./inner-header/inner-header.component";
     CategoryComponent,
     FooterComponent,
     HeaderComponent,
-    InnerHeaderComponent,
     MenuComponent,
     SearchComponent,
     SoldDevicesComponent,
     ProductsComponent,
     ProductDetailComponent,
-    InnerFooterComponent
+    InnerFooterComponent,
+    InnerHeaderComponent
   ],
   imports: [
     BrowserModule,

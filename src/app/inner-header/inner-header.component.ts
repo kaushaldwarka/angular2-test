@@ -2,15 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import {Location} from "@angular/common";
 
 @Component({
-  selector: 'inner-header',
+  selector: 'app-inner-header',
   templateUrl: './inner-header.component.html',
   styleUrls: ['./inner-header.component.css']
 })
 export class InnerHeaderComponent implements OnInit {
 
-  constructor(private _location: Location) { }
+  constructor(private _location:Location) { }
 
-  goBack():void{
+  goBack(){
     this._location.back();
   }
 
